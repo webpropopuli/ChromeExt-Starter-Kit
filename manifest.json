@@ -1,0 +1,28 @@
+{
+  "name": "ChromeExt",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "ChromeExt is a starter kit for creating your own Chrome Extension",
+  "homepage_url": "https://webpropopuli.com/tools/chrome_ext",
+  "background": {
+    "XXXpage": "bgpage.html",
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "XXXdefault_popup": "popup.html",
+    "default_icon": "skull-icon.png",
+    "default-title": "my cool ext"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "chromeos": "Alt+Shift+F",
+        "linux": "Alt+Shift+F",
+        "mac": "Alt+Shift+F",
+        "windows": "Alt+Shift+F"
+      }
+    }
+  },
+  "permissions": ["https://*/*", "http://*/*", "tabs"]
+}
